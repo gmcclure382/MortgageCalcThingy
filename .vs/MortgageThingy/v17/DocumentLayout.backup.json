@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC12222-9DCD-4D48-A8DF-70F583836C1C}|MortgageThingy.csproj|c:\\users\\gmcclure\\source\\repos\\mortgagethingy\\mortgagecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC12222-9DCD-4D48-A8DF-70F583836C1C}|MortgageThingy.csproj|solutionrelative:mortgagecalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC12222-9DCD-4D48-A8DF-70F583836C1C}|MortgageThingy.csproj|c:\\users\\gmcclure\\source\\repos\\mortgagethingy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC12222-9DCD-4D48-A8DF-70F583836C1C}|MortgageThingy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MortgageCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\MortgageCalculator.cs",
+              "RelativeDocumentMoniker": "MortgageCalculator.cs",
+              "ToolTip": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\MortgageCalculator.cs",
+              "RelativeToolTip": "MortgageCalculator.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAAANAAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:27:49.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:27:24.001Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
