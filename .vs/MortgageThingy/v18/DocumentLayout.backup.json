@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +34,19 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
@@ -52,9 +56,10 @@
               "RelativeDocumentMoniker": "MortgageCalculator.cs",
               "ToolTip": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\MortgageCalculator.cs",
               "RelativeToolTip": "MortgageCalculator.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAAAPUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAcwPkAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:27:49.596Z"
+              "WhenOpened": "2025-05-05T20:27:49.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,7 +69,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\gmcclure\\source\\repos\\MortgageThingy\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAWwC0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwIcAAACqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T20:27:24.001Z",
               "EditorCaption": ""

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MortgageThingy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27455d69934f933767f4d40240188ae73f5fc6b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MortgageThingy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MortgageThingy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

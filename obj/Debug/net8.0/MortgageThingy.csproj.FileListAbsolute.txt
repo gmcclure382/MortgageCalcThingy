@@ -12,3 +12,4 @@ C:\Users\gmcclure\source\repos\MortgageThingy\obj\Debug\net8.0\refint\MortgageTh
 C:\Users\gmcclure\source\repos\MortgageThingy\obj\Debug\net8.0\MortgageThingy.pdb
 C:\Users\gmcclure\source\repos\MortgageThingy\obj\Debug\net8.0\MortgageThingy.genruntimeconfig.cache
 C:\Users\gmcclure\source\repos\MortgageThingy\obj\Debug\net8.0\ref\MortgageThingy.dll
+C:\Users\gmcclure\source\repos\MortgageThingy\obj\Debug\net8.0\MortgageThingy.sourcelink.json
