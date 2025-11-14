@@ -2,15 +2,4 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/MortgageThingy/CopilotIndices/17.14.1231.31060/CodeChunks.db
-/.vs/MortgageThingy/CopilotIndices/17.14.1231.31060/SemanticSymbols.db
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/CodeChunks.db
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/CodeChunks.db-shm
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/CodeChunks.db-wal
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/SemanticSymbols.db
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/SemanticSymbols.db-shm
-/.vs/MortgageThingy/CopilotIndices/18.0.925.419/SemanticSymbols.db-wal
-/.vs/MortgageThingy/DesignTimeBuild/.dtbcache.v2
-/.vs/MortgageThingy/FileContentIndex/ebc86c87-511a-4f3b-aa94-3da44a6bf0f1.vsidx
-/.vs/MortgageThingy/FileContentIndex/f56d2fa2-cdcf-409b-8e51-9e23e2f2c7c2.vsidx
-/.vs/MortgageThingy/FileContentIndex/c064903f-299d-41af-a74e-ae459d025706.vsidx
+.vs/

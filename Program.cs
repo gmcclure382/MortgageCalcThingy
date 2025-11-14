@@ -14,18 +14,18 @@ namespace MortgageThingy
             Console.WriteLine();
 
             // Default Values
-            double defaultHousePrice = 350000;
+            double defaultHousePrice = 340000;
             double defaultDepositCash = 200000;
-            double defaultMortgageRateFrom = 0.065; // 6.5%
-            double defaultMortgageRateTo = 0.079;   // 7.9%
-            double defaultInvestmentReturn = 0.06;  // 8% annual
+            double defaultMortgageRateFrom = 0.05875; // 6.5%
+            double defaultMortgageRateTo = 0.05875;   // 7.9%
+            double defaultInvestmentReturn = 0.04;  // 8% annual
             int defaultMonthlyContribution = 1000;
-            int defaultPropertyTax = 2000;
-            int defaultHomeInsurance = 1500;
+            int defaultPropertyTax = 1865;
+            int defaultHomeInsurance = 2160;
             int defaultPrincipalPayment = 0;
-            int defaultForcedDown = 0;
-            double defaultPMIRate = 0.005; // 0.5% of loan amount annually
-            double defaultClosingCosts = 5000; // Example: $5,000 for closing costs
+            int defaultForcedDown = 68000;
+            double defaultPMIRate = 0.000; // 0.5% of loan amount annually
+            double defaultClosingCosts = 1384; // Example: $5,000 for closing costs
             int defaultLoanTermYears = 30;
 
             // Get User Inputs using helper methods, passing default values
@@ -47,9 +47,9 @@ namespace MortgageThingy
             double toPercent = GetDoubleInput("Mortgage Rate To (7.9)", defaultMortgageRateTo, true);
             double investmentReturnAnnual = GetDoubleInput("Annual Investment Return (6)", defaultInvestmentReturn, true);
             int monthlyContribution = GetIntInput("Monthly Contribution from Paycheck (towards housing)", defaultMonthlyContribution);
+            int principalPayment = GetIntInput("Extra Monthly Principal Payment (0)", defaultPrincipalPayment);
             int propertyTax = GetIntInput("Yearly Property Tax (2000)", defaultPropertyTax);
             int homeInsurance = GetIntInput("Yearly Home Insurance (1500)", defaultHomeInsurance);
-            int principalPayment = GetIntInput("Extra Monthly Principal Payment (0)", defaultPrincipalPayment);
             int forcedDown = GetIntInput("Forced Down Payment Amount (0 for no forced down payment)", defaultForcedDown);
             double pmiRateAnnual = GetDoubleInput("Annual PMI Rate (e.g., 0.5 for 0.5%)", defaultPMIRate, true);
             int loanTermYears = GetIntInput("Loan Term in Years (30)", defaultLoanTermYears);
@@ -133,6 +133,7 @@ namespace MortgageThingy
                         int yr = strategy.MortgagePaidOffMonth.Value / 12;
                         int mo = strategy.MortgagePaidOffMonth.Value % 12;
                         Console.WriteLine($"Mortgage paid off early after {yr} years and {mo} months");
+                        Console.WriteLine($"Investment Balance at Mortgage Payoff: {strategy.InvestmentBalanceAtPayoff.Value.ToString("C", CultureInfo.CurrentCulture)}");
                     }
                     else
                     {

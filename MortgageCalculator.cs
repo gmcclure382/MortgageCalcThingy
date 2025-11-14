@@ -16,6 +16,8 @@ namespace MortgageThingy
         public double InitialInvestmentAmount { get; set; } // Added for clarity
         public double InitialLoanAmount { get; set; } // Added for clarity
         public double PMITotalPaid { get; set; } // Added to track PMI cost
+
+        public double? InvestmentBalanceAtPayoff { get; set; }
     }
 
     public class MortgageCalculator
@@ -34,6 +36,7 @@ namespace MortgageThingy
             double forcedDown = 0,
             int loanTermYears = 30)      // New: Loan Term
         {
+            double bestInvestmentAtPayoff = double.NaN;
             double bestPercent = 0;
             double bestDraw = 0;
             int bestMonthsCovered = 0;
@@ -74,6 +77,7 @@ namespace MortgageThingy
 
             for (int percent = startPercent; percent <= endPercent; percent += 1)
             {
+                double investmentBalanceAtPayoffForThisStrategy = double.NaN;
                 double downPayment = housePrice * (percent / 100.0);
 
                 // If forcedDown is active, ensure we use that value
@@ -187,6 +191,14 @@ namespace MortgageThingy
 
                     investmentBalance -= drawThisMonth;
                     monthsCovered++;
+
+                    // NEW: snapshot investment at payoff moment
+                    if (mortgagePaidOff && double.IsNaN(investmentBalanceAtPayoffForThisStrategy))
+                    {
+                        investmentBalanceAtPayoffForThisStrategy = investmentBalance;
+                    }
+
+
                 }
 
                 // We want the strategy that keeps the investment alive the longest.
@@ -210,6 +222,7 @@ namespace MortgageThingy
                     // This needs to be calculated based on the *initial* monthly cost for that strategy
                     double initialPMIForBestStrategy = (downPayment / housePrice < 0.20) ? (loanAmount * pmiRateAnnual) / 12.0 : 0;
                     bestDraw = Math.Round(monthlyMortgage + monthlyPropertyTax + monthlyInsurance + initialPMIForBestStrategy - userMonthlyContribution, 2);
+                    bestInvestmentAtPayoff = investmentBalanceAtPayoffForThisStrategy;
                 }
 
                 // If forcedDown was used, we only want to run one iteration
@@ -231,7 +244,10 @@ namespace MortgageThingy
                 MortgagePaidOffMonth = bestPayoffMonth,
                 InitialInvestmentAmount = Math.Round(bestInitialInvestment, 2),
                 InitialLoanAmount = Math.Round(bestInitialLoanAmount, 2),
-                PMITotalPaid = Math.Round(bestPMITotalPaid, 2)
+                PMITotalPaid = Math.Round(bestPMITotalPaid, 2),
+                InvestmentBalanceAtPayoff = double.IsNaN(bestInvestmentAtPayoff)
+        ? (double?)null
+        : Math.Round(bestInvestmentAtPayoff, 2)
             };
         }
 
